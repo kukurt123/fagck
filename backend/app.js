@@ -15,6 +15,9 @@ mongoose.connect("mongodb+srv://kurt:"+ process.env.MONGO_ATLAS_PW +"@cluster0-1
     console.log("Connection failed!");
   });
 
+const distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/images", express.static(path.join("images")));
@@ -31,6 +34,8 @@ app.use((req, res, next) => {
   );
   next();
 });
+
+
 
 app.use("/api/posts", postsRoutes);
 app.use("/api/user", userRoutes);
