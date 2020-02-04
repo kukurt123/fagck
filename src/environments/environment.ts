@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://tranquil-beyond-18949.herokuapp.com/api'
+  apiUrl: 'https://fagck1.herokuapp.com/api'
 };
 
 /*
