@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://fagck1.herokuapp.com/api'
+  apiUrl: 'https://blooming-ravine-41338.herokuapp.com/api'
 };
